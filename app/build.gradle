@@ -1,0 +1,129 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'koin'
+}
+
+android {
+    compileSdkVersion AndroidSdk.COMPILE_SDK
+    buildToolsVersion "30.0.3"
+
+    def versionPropsFile = file('version.properties')
+    Properties versionProps = new Properties()
+
+    if (versionPropsFile.canRead()) {
+        versionProps.load(new FileInputStream(versionPropsFile))
+    }
+
+    def practicalAppVersionCode = versionProps['PRACTICAL_APP_VERSION_CODE'].toInteger()
+    def practicalAppVersionName = versionProps['PRACTICAL_APP_VERSION_NAME']
+
+
+
+    defaultConfig {
+        applicationId "com.cloudsek.practicaljanak"
+
+        minSdkVersion AndroidSdk.MINIMUM_SDK
+        targetSdkVersion AndroidSdk.TARGET_SDK
+
+        versionCode practicalAppVersionCode
+        versionName practicalAppVersionName
+
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        config {
+            storeFile file('../projectData/practicalJanak.jks')
+            storePassword 'practicalJanak'
+            keyAlias = 'practicalJanak'
+            keyPassword 'practicalJanak'
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "BASE_URL", baseUrlForWebSocket
+            //signingConfig = null // set to null to override default behavior
+            //debuggable true
+            buildConfigField "String", "ACCESS_TOKEN", accessTokenForAPICall
+        }
+
+
+        release {
+            buildConfigField "String", "BASE_URL", baseUrlForWebSocket
+            buildConfigField "String", "ACCESS_TOKEN", accessTokenForAPICall
+
+            signingConfig signingConfigs.config
+
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation GradleDependencies.kotlinStdlib
+    implementation GradleDependencies.ktxCore
+    implementation GradleDependencies.appCompactX
+    implementation GradleDependencies.materialDesign
+    implementation GradleDependencies.constraintLayout
+
+    implementation GradleDependencies.lifecycle
+    implementation GradleDependencies.coroutines
+    implementation GradleDependencies.preferences
+
+    implementation GradleDependencies.roomRuntime
+    kapt GradleDependencies.kaptRoomComplier
+
+    implementation GradleDependencies.rxJava
+
+    implementation GradleDependencies.glide
+    kapt GradleDependencies.glideCompiler
+
+
+    //Multidex support prior to Android 5.0
+    implementation GradleDependencies.multidex
+
+
+    //Koin
+    implementation GradleDependencies.koinCore
+    implementation GradleDependencies.koinExtension
+    implementation GradleDependencies.koinFragment
+    implementation GradleDependencies.koinScope
+    implementation GradleDependencies.koinViewModel
+
+    //Lottie for loader
+    implementation GradleDependencies.lottie
+
+    //Socket
+    implementation GradleDependencies.webSocket
+
+    //Graph UI
+    implementation GradleDependencies.philJayGraphUI
+
+    implementation NetworkLibrary.retrofitGson
+
+    implementation project(path: ':networkModule')
+
+    testImplementation TestLibraries.jUnit
+    androidTestImplementation TestLibraries.jUnitTestRunner
+    androidTestImplementation TestLibraries.espressoCore
+}

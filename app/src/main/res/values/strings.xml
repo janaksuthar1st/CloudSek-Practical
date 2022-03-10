@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Practical Janak</string>
+
+    <string name="default_loading_message">Loading…</string>
+    <string name="default_internet_message">No Internet Connection</string>
+
+    <string name="msg_no_data_found">No Data Found</string>
+    <string name="msg_no_internet_home_screen">No internet connection available. Please turn on your internet &amp; try again.</string>
+
+    <string name="lbl_something_went_wrong">Something went wrong. Please try again.</string>
+    <string name="btn_text_ok">OK</string>
+    <string name="btn_text_go_back">Go Back</string>
+
+    <!--Home Screen-->
+    <string name="title_coding_assignment_android">Coding Assignment - Android</string>
+    <string name="title_cloudsek">CloudSEK</string>
+    <string name="desc_practical">It a practical test app for the organization CloudSEK. Test includes fining application assets from a third party API.</string>
+    <string name="btn_search_application">Search Application</string>
+    <string name="btn_my_application">My Applications</string>
+    <string name="btn_about_us">About Us</string>
+    <string name="btn_exit">Exit</string>
+    <!--Home Screen-->
+
+    <!--Search Application-->
+    <string name="hint_enter_package_name">Enter package name</string>
+    <string name="desc_package_name">Package name should be a application package name for which you want to get all assets. For examples: com.whatsapp, com.facebook.lite etc.</string>
+    <string name="btn_get_assets">Get Assets</string>
+    <string name="error_please_enter_package_name_first">Please enter package name first.</string>
+    <!--Search Application-->
+
+    <!--My Application-->
+    <string name="lbl_target_sdk_version">Target SDK Version</string>
+    <!--My Application-->
+
+
+    <string name="title_amazon_execute_api_url">Amazon Execute-API URL</string>
+    <string name="title_email">Email</string>
+    <string name="title_file_name">File Name</string>
+    <string name="title_file_path">File Path</string>
+    <string name="title_host">Host</string>
+    <string name="title_ip_address">IP Address disclosure</string>
+    <string name="title_rest_api">Rest API</string>
+    <string name="title_url">URL</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

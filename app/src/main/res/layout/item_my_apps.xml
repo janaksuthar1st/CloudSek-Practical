@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10dp"
+    app:cardBackgroundColor="@color/bgColorWhite"
+    app:cardCornerRadius="@dimen/cardViewRadius"
+    app:cardElevation="@dimen/dimen_3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAlbumImage"
+            android:layout_width="@dimen/albumImageSmallWidth"
+            android:layout_height="@dimen/albumImageSmallHeight"
+            android:src="@drawable/cloudsek_launcher"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPackageName"
+            style="@style/StyleNormalTextView.XNormalBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_15dp"
+            app:layout_constraintEnd_toStartOf="@id/ivRightArrow"
+            app:layout_constraintStart_toEndOf="@id/ivAlbumImage"
+            app:layout_constraintTop_toTopOf="@id/ivAlbumImage"
+            tools:text="Package name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTargetSDKText"
+            style="@style/StyleNormalTextView.XNormalBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textSize="@dimen/textSizeMedium"
+            app:layout_constraintTop_toBottomOf="@id/tvPackageName"
+            app:layout_constraintStart_toEndOf="@id/ivAlbumImage"
+            app:layout_constraintBottom_toBottomOf="@id/tvTargetSDK"
+            android:text="@string/lbl_target_sdk_version" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTargetSDK"
+            style="@style/StyleNormalTextView.smallBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dimen_10dp"
+            android:paddingVertical="@dimen/dimen_2dp"
+            android:layout_marginHorizontal="@dimen/dimen_5dp"
+            app:layout_constraintStart_toEndOf="@id/tvTargetSDKText"
+            app:layout_constraintTop_toTopOf="@id/tvTargetSDKText"
+            tools:text="30"
+            android:background="@color/bgColorGood"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRightArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/icn_right_arrow_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

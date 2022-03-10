@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/drawable/bg_splash.xml" value="0.115" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/drawable/ic_launcher_background.xml" value="0.115" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/activity_home_screen.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/activity_splash_screen.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/fragment_air_quality_list.xml" value="0.17037037037037037" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/fragment_application_details.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/fragment_home.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/fragment_my_application_list.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/fragment_search_application_list.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/item_air_quality_list.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/item_app_assets.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/item_app_assets_child.xml" value="0.22" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/item_my_apps.xml" value="0.22" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/layout/toolbar_main.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/CloudSEK Practical/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.115" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.10729166666666666" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/drawable/bg_border_good.xml" value="0.2125" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/drawable/bg_splash.xml" value="0.2125" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/drawable/ic_icn_proxomity.xml" value="0.2125" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/drawable/ic_launcher_background.xml" value="0.10729166666666666" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/layout/activity_splash_screen.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/layout/fragment_air_quality_details.xml" value="0.17" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/layout/fragment_air_quality_list.xml" value="0.19635416666666666" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/layout/fragment_music_list.xml" value="0.33" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/layout/item_air_quality_list.xml" value="0.25" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/layout/item_music_list.xml" value="0.1" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2125" />
+        <entry key="..\:/Projects/Practical Project/Proximity Practical/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

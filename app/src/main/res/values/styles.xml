@@ -1,0 +1,30 @@
+<resources>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+
+    <!--TextView Styles-->
+    <style name="StyleNormalTextView">
+        <item name="android:fontFamily">@font/abeezee</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="StyleNormalTextView.XXNormalBlack">
+        <item name="android:textSize">@dimen/textSizeXXNormal</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+    </style>
+
+    <style name="StyleNormalTextView.XNormalBlack">
+        <item name="android:textSize">@dimen/textSizeXNormal</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+    </style>
+
+    <style name="StyleNormalTextView.smallBlack">
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:textColor">@color/textColorBlack</item>
+    </style>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColorWhite"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <include android:id="@+id/toolbarMain"
+        layout="@layout/toolbar_main"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/bgCloudsekTheme"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        app:cardBackgroundColor="@color/bgColorWhite"
+        app:cardCornerRadius="@dimen/cardViewRadius"
+        app:cardElevation="@dimen/dimen_3dp">
+
+        <EditText
+            android:id="@+id/etPackageId"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_package_name"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/StyleNormalTextView.smallBlack"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:layout_height="wrap_content"
+        android:text="@string/desc_package_name"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGetAssets"
+        style="@style/StyleNormalTextView.XNormalBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_15dp"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20dp"
+        android:textColor="@color/textColorWhite"
+        android:background="@color/bgCloudsekTheme"
+        android:text="@string/btn_get_assets"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icn_cloudsek_logo"
+        android:layout_marginHorizontal="@dimen/dimen_40dp"
+        android:tint="@color/bgCloudsekTheme"/>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/innerContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColorWhite"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_20dp">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/StyleNormalTextView.XXNormalBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_coding_assignment_android"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/StyleNormalTextView.XNormalBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_cloudsek"
+            />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/StyleNormalTextView.smallBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:text="@string/desc_practical"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/bgColorBlack"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSearchApplication"
+        style="@style/StyleNormalTextView.XNormalBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_50dp"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20dp"
+        android:textColor="@color/textColorWhite"
+        android:background="@color/bgCloudsekTheme"
+        android:text="@string/btn_search_application"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMyApplications"
+        style="@style/StyleNormalTextView.XNormalBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20dp"
+        android:textColor="@color/textColorWhite"
+        android:background="@color/bgCloudsekTheme"
+        android:text="@string/btn_my_application"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAboutUs"
+        style="@style/StyleNormalTextView.XNormalBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20dp"
+        android:textColor="@color/textColorWhite"
+        android:background="@color/bgCloudsekTheme"
+        android:text="@string/btn_about_us"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvExit"
+        style="@style/StyleNormalTextView.XNormalBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20dp"
+        android:textColor="@color/textColorWhite"
+        android:background="@color/bgCloudsekTheme"
+        android:text="@string/btn_exit"/>
+
+</LinearLayout>
